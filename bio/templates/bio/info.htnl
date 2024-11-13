@@ -1,0 +1,4 @@
+{% extends  "bio/info.html"%}
+
+{%block content%}
+{%{% endblock %}%}
