@@ -8,19 +8,19 @@ def index(request):
     return render(request,'bio/info.html')
 
 def description(request):
-    pass
+    return render(request,'bio/description.html' )
 
 def abilities(request):
-    pass
+    return render(request,'bio/abilities.html' )
 
 def education(request):
-    pass
+    return render(request,'bio/education.html' )
 
 def projects(request):
-    pass
+    return render(request,'bio/projects.html' )
 
 def contact(request):
-    pass
+    return render(request,'bio/contact.html' )
 
 
 
