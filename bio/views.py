@@ -5,10 +5,10 @@ from django.shortcuts import render
 # Create your views here.
 def index(request):
 
-    return render(request,'bio/info.html')
+    return render(request,'bio/index.html')
 
-def description(request):
-    return render(request,'bio/description.html' )
+def about(request):
+    return render(request,'bio/about.html' )
 
 def abilities(request):
     return render(request,'bio/abilities.html' )
