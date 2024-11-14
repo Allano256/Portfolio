@@ -5,7 +5,7 @@ from django.shortcuts import render
 # Create your views here.
 def index(request):
 
-    return render(request,'bio/index.html')
+    return render(request,'bio/home.html')
 
 def education(request):
     return render(request,'bio/education.html' )

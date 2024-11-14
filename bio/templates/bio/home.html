@@ -1,12 +1,13 @@
-{%extends "bio/index.html"%} {% load static%} {% block css_files%}
+{%extends "bio/index.html"%} {%load static%} {%block css_files%}
+
 <link
   rel="stylesheet"
   type="text/css"
-  href="{%  static 'bio/css/index.css' %}" />
-{%endblock %} {%block content%}
+  href="{% static 'bio/css/index.css' %}" />
+{%endblock%} {%block content%}
 <nav class="navbar navbar-expand-lg bg-transparent">
   <div class="container-fluid">
-    <a class="navbar-brand logo" href="#">AllanoTech</a>
+    <a class="navbar-brand" href="{% url 'home' %}">AllanoTech</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -38,8 +39,24 @@
 
 <hr />
 
-<div class="content">
-  <h1>My Education</h1>
+<div class="content main">
+    <div class="container">
+    <div class='box'>
+  <h1>HELLO<span>.</span></h1>
+  <H2>This is Allan Zizinga...<h2>
+  <p>Hey I am a fullstack software developer <br>ready to make this world a better place!</p>
+  </div>
+  <div class='box1'>
+    <img src="{% static 'bio/images/me.png' %}" alt="an image of a man" id="picture" >
+  </div>
+</div>
+
+<div class="tin">
+    <h2>I will create beautiful <br> and powerful websites and Apps for You.</h2>
+</div>
+  
 </div>
 <hr />
 {%endblock%}
+
+
